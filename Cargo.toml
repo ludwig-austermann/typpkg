@@ -1,0 +1,20 @@
+[package]
+name = "typpkg"
+authors = ["Ludwig Austermann"]
+description = "typpkg translates a project with `typst.toml` to the corresponding `{package name}/{package version}` directory. It makes it convenient to maintain (version controlled) local packages and makes publishing packages easier and less error-prone."
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.97"
+clap = { version = "4.5", features = ["derive"] }
+clap-verbosity-flag = "3.0"
+directories = "6.0"
+image = "0.25"
+image_hasher = "3.0"
+log = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+simplelog = "0.12"
+toml = "0.8"
+walkdir = "2.5"
+wax = "0.6"
