@@ -36,12 +36,8 @@ If you wanted to exclude the `example` folder in your project, you would have to
 exclude = ["examples", "examples/**/*"]
 ```
 
-If you wanted to call `echo hello` in nushell as the prescript, use
+If you wanted to call `echo hello` in nushell as the postscript, use
 ```toml
 [tool.typpkg]
-prescript = {command="nu", arguments=['-c "echo hello"']}
+postscript = {command="nu", arguments=['-c "echo hello"']}
 ```
-
-## TODO
-- [] files to compile
-- [] tests to run
